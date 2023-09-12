@@ -11,3 +11,6 @@ CamewaDescwipsion GetViewPoint(ProtectedClass* p)
     __int64 CameraBuffer = p->Read<__int64>(p->Read<__int64>(v7) + 8) ^ 0x4CF1F15DFE2D977Fi64;
     return p->Read<CamewaDescwipsion>(CameraBuffer);
 }
+
+//join my server to support me <3
+//https://discord.gg/h-m

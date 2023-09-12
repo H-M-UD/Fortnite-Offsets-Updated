@@ -11,3 +11,5 @@ Vector3 ProjectWorldToScreen(Vector3 WorldLocation)
 		vTransformed.z = 1.f;
 	return Vector3((Width / 2.0f) + vTransformed.x * (((Width / 2.0f) / tanf(ViewPoint.FieldOfView * (float)M_PI / 360.f))) / vTransformed.z, (Height / 2.0f) - vTransformed.y * (((Width / 2.0f) / tanf(ViewPoint.FieldOfView * (float)M_PI / 360.f))) / vTransformed.z, 0);
 }
+//join my server to support me <3
+//https://discord.gg/h-m

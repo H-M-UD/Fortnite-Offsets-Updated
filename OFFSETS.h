@@ -34,7 +34,7 @@ namespace OFFSETS
     uintptr_t BoneArray = 0x600;
     uintptr_t Bonecache = 0x648;
     uintptr_t Velocity = 0xb8;
-    uintptr_t Private = 0x308; //pawnprivate
+    uintptr_t Private = 0x308; //PawnPrivate
     uintptr_t PlayerArray = 0x2A8;
     uintptr_t relativelocation = 0x128;
     uintptr_t UCharacterMovementComponent = 0x318;
@@ -46,3 +46,6 @@ namespace OFFSETS
     uintptr_t SkeletalMeshes = 0x56e;
     uintptr_t PawnMaterials_ALL = 0x5A60;
 }
+
+//join my server to support me <3
+//https://discord.gg/h-m

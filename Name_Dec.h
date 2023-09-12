@@ -20,3 +20,6 @@
                 ++v29;
             } while (v27 < v26);
         }
+
+//join my server to support me <3
+//https://discord.gg/h-m

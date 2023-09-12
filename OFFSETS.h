@@ -2,6 +2,12 @@ namespace OFFSETS
 {
     uintptr_t UWORLD = 0xe762638;
     uintptr_t Viewpoint = 0xE2CED18;
+    uintptr_t GObjects: 0xE73BE40
+    uintptr_t GNames: 0xE901300
+    uintptr_t StaticFindObject: 0x38126C4
+    //-----------------------------------
+   // useful offsets for names and stuff
+    //-----------------------------------
     uintptr_t Gameinstance = 0x1b8;
     uintptr_t LocalPlayers = 0x38;
     uintptr_t PlayerController = 0x30;

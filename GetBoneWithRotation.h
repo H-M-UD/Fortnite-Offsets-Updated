@@ -7,3 +7,6 @@ Vector3 GetBoneWithRotation(uintptr_t mesh, int bone_id)
 	D3DMATRIX matrix = MatrixMultiplication(bone.ToMatrixWithScale(), component_to_world.ToMatrixWithScale());
 	return Vector3(matrix._41, matrix._42, matrix._43);
 }
+
+//join my server to support me <3
+//https://discord.gg/h-m

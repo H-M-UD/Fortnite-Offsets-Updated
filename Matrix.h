@@ -34,3 +34,6 @@ D3DXMATRIX Matrix(Vector3 rot, Vector3 origin = Vector3(0, 0, 0))
 
 	return matrix;
 }
+
+//join my server to support me <3
+//https://discord.gg/h-m

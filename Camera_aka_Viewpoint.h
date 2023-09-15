@@ -2,7 +2,7 @@ Camera get_view_point()
 {
 
 //NEW CAMERA VP WORKING!
-//THANKS TO Deano FOR THE UPDATED CAMERA VIEW POINT
+//THANKS TO Coby FOR THE UPDATED CAMERA VIEW POINT
 	
 	Camera ViewPoint;
 	__int64 result; // rax

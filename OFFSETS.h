@@ -1,13 +1,15 @@
+#pragma once
+#include <Windows.h>
+
+#define GWorld 0xE7B9A48
+#define VIEW_POINT 0xE2CED18
+
+
 namespace OFFSETS
 {
-    uintptr_t UWORLD = 0xe762638;
-    uintptr_t Viewpoint = 0xE2CED18;
-    uintptr_t GObjects: 0xE73BE40
-    uintptr_t GNames: 0xE901300
-    uintptr_t StaticFindObject: 0x38126C4
-    //-----------------------------------
-   // useful offsets for names and stuff
-    //-----------------------------------
+    uintptr_t UWORLD = 0xE7B9A48;
+    uintptr_t Viewpoint = 0xE322218;
+
     uintptr_t Gameinstance = 0x1b8;
     uintptr_t LocalPlayers = 0x38;
     uintptr_t PlayerController = 0x30;
@@ -24,7 +26,7 @@ namespace OFFSETS
     uintptr_t AActor = 0x98;
     uintptr_t CurrentActor = 0x8;
     uintptr_t Mesh = 0x318;
-    uintptr_t Revivefromdbnotime = 0x4af8;
+    uintptr_t Revivefromdbnotime = 0x4b68;
     uintptr_t TeamId = 0x10D8;
     uintptr_t ActorTeamId = 0x10C8;
 
@@ -46,6 +48,7 @@ namespace OFFSETS
     uintptr_t SkeletalMeshes = 0x56e;
     uintptr_t PawnMaterials_ALL = 0x5A60;
 }
+
 
 //join my server to support me <3
 //https://discord.gg/h-m

@@ -1,14 +1,11 @@
-#pragma once
-#include <Windows.h>
-
-#define GWorld 0xE7B9A48
-#define VIEW_POINT 0xE2CED18
+#define GWorld 0x10AEC0B8
+#define VIEW_POINT 0xE49C7E0
 
 
 namespace OFFSETS
 {
-    uintptr_t UWORLD = 0xE7B9A48;
-    uintptr_t Viewpoint = 0xE322218;
+    uintptr_t UWORLD = 0x10AEC0B8;
+    uintptr_t Viewpoint = 0xE49C7E0;
 
     uintptr_t Gameinstance = 0x1b8;
     uintptr_t LocalPlayers = 0x38;
@@ -18,8 +15,8 @@ namespace OFFSETS
     uintptr_t RootComponet = 0x198;
     uintptr_t GameState = 0x158;
     uintptr_t PersistentLevel = 0x30;
-    uintptr_t LastSubmitTime = 0x360;
-    uintptr_t LastRenderTimeOnScreen = 0x368;
+    uintptr_t LastSubmitTime = 0x368;
+    uintptr_t LastRenderTimeOnScreen = 0x370;
 
     uintptr_t ActorCount = 0xA0;
     uintptr_t Cameramanager = 0x348;
@@ -27,13 +24,13 @@ namespace OFFSETS
     uintptr_t CurrentActor = 0x8;
     uintptr_t Mesh = 0x318;
     uintptr_t Revivefromdbnotime = 0x4b68;
-    uintptr_t TeamId = 0x10D8;
-    uintptr_t ActorTeamId = 0x10C8;
+    uintptr_t TeamId = 0x10e0;
+    uintptr_t ActorTeamId = 0x10e0;
 
     uintptr_t IsDBNO = 0x872;
     uintptr_t LocalActorPos = 0x128;
     uintptr_t ComponetToWorld = 0x240;
-    uintptr_t BoneArray = 0x600;
+    uintptr_t BoneArray = 0x610;
     uintptr_t Bonecache = 0x648;
     uintptr_t Velocity = 0xb8;
     uintptr_t Private = 0x308; //PawnPrivate
@@ -47,8 +44,10 @@ namespace OFFSETS
     uintptr_t Wireframe = 0x194;
     uintptr_t SkeletalMeshes = 0x56e;
     uintptr_t PawnMaterials_ALL = 0x5A60;
+
+    // for novoline paste mfs:
+
+    uintptr_t BoneMatrix = 0x11F2D70;
+    uintptr_t StaticFindObject = 0x1216928;
 }
-
-
-//join my server to support me <3
-//https://discord.gg/h-m
+https://discord.gg/p824eVknXX

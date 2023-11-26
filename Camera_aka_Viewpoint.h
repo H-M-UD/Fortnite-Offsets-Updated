@@ -1,37 +1,36 @@
-struct CamewaDescwipsion
+struct hmpasta
 {
-    Vector3 Location;
-    Vector3 Rotation;
-    float FieldOfView;
+    Vector3 location;
+    Vector3 rotation;
+    float fov;
 };
 
-CamewaDescwipsion GetViewPoint()
+
+hmpasta get_camera()
 {
-    CamewaDescwipsion ViewPoint;
-    __int64 result; // rax
-    __int64 v7; // rcx
+    hmpasta camera;
 
-    result = read<int64>(base_address + 0xE322218);
-    v7 = base_address + 0xE3221D8;
-    if (result)
-        v7 = result;
+    auto location_pointer = read<uintptr_t>(Uworld + 0x110);
+    auto rotation_pointer = read<uintptr_t>(Uworld + 0x120);
 
-    int64 EncryptedData[7];
+    struct FNRot
+    {
+        double a; //0x0000
+        char pad_0008[24]; //0x0008
+        double b; //0x0020
+        char pad_0028[424]; //0x0028
+        double c; //0x01D0
+    }fnRot;
 
-    for (int i = 0; i < 7; i++)
-        EncryptedData[i] = read<__int64>(v7 + (i * 8));
-    EncryptedData[0] ^= 0x4CFB2AC8FE274CEBi64;
-    EncryptedData[1] ^= 0x4CFB2AC8FE274CEBi64;
-    EncryptedData[2] ^= 0x4EFB2AC9FE274CEAi64;
-    EncryptedData[3] ^= 0xAF841EB813427C9i64;
-    EncryptedData[4] ^= 0xAF841EB813427C9i64;
-    EncryptedData[5] ^= 0x4EF841EB813427C9i64;
-    EncryptedData[6] ^= 0x4E1DB9AD4C1EF28Bi64;
+    fnRot.a = read<double>(rotation_pointer);
+    fnRot.b = read<double>(rotation_pointer + 0x20);
+    fnRot.c = read<double>(rotation_pointer + 0x1d0);
 
-    ViewPoint.Location = { *(double*)(&EncryptedData[1]),*(double*)(&EncryptedData[0]), *(double*)(&EncryptedData[2]) };
-    ViewPoint.Rotation = { *(double*)(&EncryptedData[4]),*(double*)(&EncryptedData[3]), *(double*)(&EncryptedData[5]) };
-    ViewPoint.FieldOfView = *(float*)(&EncryptedData[6]);
+    camera.location = read<Vector3>(location_pointer);
+    camera.rotation.x = asin(fnRot.c) * (180.0 / M_PI);
+    camera.rotation.y = ((atan2(fnRot.a * -1, fnRot.b) * (180.0 / M_PI)) * -1) * -1;
+    camera.fov = read<float>((uintptr_t)PlayerController + 0x394) * 90.f;
 
-    return ViewPoint;
-
+    return camera;
 }
+//https://discord.gg/p824eVknXX

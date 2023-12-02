@@ -1,3 +1,3 @@
 SLATEST PATCH FORTNITE OFFSETS
 JOIN OUR SERVER FOR MORE CRAZY & UD STUFF 🤪
-https://discord.gg/p824eVknXX
+https://discord.gg/p824eVknXX 

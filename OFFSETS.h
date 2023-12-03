@@ -1,6 +1,11 @@
 UWORLD : 0x1123AF78
 FNAME : 0x11400C80
-BONEMATRIX : 0x149B864
+FreeFn: 0xC566C28
+GetBoneMatrix: 0x149B864
+ProjectWorldToScreen: 0x35BD6A8
+GObjects: 0x11213D40
+GetNameByIndex: 0x1004854
+LineOfSightTo: 0x65403D0
 FIND_OBJECT : 0x3EDBF1C
 PersistentLevel = 0x30,
 OwningGameInstance = 0x1d0,

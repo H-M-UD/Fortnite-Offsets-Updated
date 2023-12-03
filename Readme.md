@@ -1,3 +1,3 @@
 LATEST PATCH FORTNITE OFFSETS
 JOIN OUR SERVER FOR MORE CRAZY & UD STUFF 🤪
-https://discord.gg/hm-pasta 
+https://discord.gg/hm-pasta

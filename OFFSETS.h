@@ -35,5 +35,5 @@ BoneArray = 0x610
 BoneCache = 0x648
 ComponentToWorld = 0x240
 
-https://discord.gg/hm-pasta
+//https://discord.gg/hm-pasta
 

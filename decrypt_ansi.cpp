@@ -1,4 +1,4 @@
-```            char* v2; // rdi
+            char* v2; // rdi
             int v4; // er8
             __int64 result; // rax
             __int64 v6; // rdx
@@ -19,5 +19,5 @@
                     ++v2;
                     --v6;
                 } while (v6);
-            }```
-              //https://discord.gg/hm-pasta
+            }
+//https://discord.gg/hm-pasta

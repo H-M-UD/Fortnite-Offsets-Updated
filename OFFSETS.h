@@ -1,5 +1,5 @@
 "UWorld": "0x1133C4C8", //updated
-    "FName": "0x11947880",
+    "FNamePool": "0x1150A280",
     "tier": "0x73",
     "DisplayName": "0x90",
     "PrimaryPickupItemEntry": "0x350",

@@ -1,4 +1,4 @@
-//https://discord.gg/XyzVnsUZtv
+//https://discord.gg/h-m
 uintptr_t GetBoneArrayAddress(uintptr_t mesh) {
     uintptr_t bone_array = d::read<uintptr_t>(mesh + 0x608);
     if (bone_array == NULL)
@@ -15,4 +15,4 @@ Vector3 GetBoneWithRotation(uintptr_t mesh, int bone_id) {
 }
 
 //join my server to support me <3
-//https://discord.gg/XyzVnsUZtv
+//https://discord.gg/h-m

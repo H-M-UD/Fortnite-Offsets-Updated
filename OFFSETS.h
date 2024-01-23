@@ -22,15 +22,15 @@
     "RelativeRotation": "0x138",
     "Mesh": "0x318",
     "PlayerState": "0x2b0",
-    "TeamIndex": "0x10e0",
+    "TeamIndex": "0x10f1", //updated
     "ReviveFromDBNOTime": "0x4ae8",
     "LocalActorPos": "0x120",
     "ComponentToWorld": "0x230",
     "CurrentWeapon": "0xa20",
     "CurrentVehicle": "0x2840",
-    "bIsReloadingWeapon": "0x360",
+    "bIsReloadingWeapon": "0x368", //updated
     "GlobalAnimRateScale": "0xa68",
-    "WeaponData": "0x4a8",
+    "WeaponData": "0x4d0", //updated
     "BoneArray": "0x608",
     "BoneCache": "0x658",
     "Velocity": "0x168",
@@ -41,7 +41,7 @@
     "ReticleNoTargetColor": "0x704",
     "InputYawScale": "0x538",
     "InputPitchScale": "0x53c",
-    "AmmoCount": "0xdcc",
+    "AmmoCount": "0xe1c", //updated
     "bIsParachuteOpen": "0x1fa4",
     "bIsSkydiving": "0x1fa3",
     "bIsDBNO": "0x93a",

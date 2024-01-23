@@ -73,5 +73,4 @@
     "ServerFuel": "0xf0"
     //https://discord.gg/XyzVnsUZtv
 
-//https://discord.gg/hm-pasta
 

@@ -14,4 +14,4 @@ if (v5)
 		--v6;
 	} while (v6);
 }
-//https://discord.gg/XyzVnsUZtv
+//https://discord.gg/h-m

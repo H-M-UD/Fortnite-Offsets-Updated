@@ -22,4 +22,4 @@
         }
 
 //join my server to support me <3
-//https://discord.gg/XyzVnsUZtv
+//https://discord.gg/h-m

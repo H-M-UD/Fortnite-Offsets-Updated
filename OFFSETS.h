@@ -1,4 +1,4 @@
-"UWorld": "0x14322bd", //updated
+"UWorld": "0x1133C4C8", //updated
     "FName": "0x11947880",
     "tier": "0x73",
     "DisplayName": "0x90",

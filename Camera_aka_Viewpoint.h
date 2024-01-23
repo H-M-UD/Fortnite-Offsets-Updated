@@ -26,4 +26,4 @@ char*v2; // rdi
     }
     while ( v9 < v4 );
   }
-//https://discord.gg/hm-pasta
+//https://discord.gg/XyzVnsUZtv

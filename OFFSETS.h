@@ -1,4 +1,4 @@
-//https://discord.gg/XyzVnsUZtv
+//https://discord.gg/h-m
 "UWorld": "0x1133C4C8", //updated
     "FNamePool": "0x1150A280", //updated
     "tier": "0x73",
@@ -71,6 +71,6 @@
     "bBrakeBeforeReverse": "0x1c",
     "CachedFuelComponent": "0x1250",
     "ServerFuel": "0xf0"
-    //https://discord.gg/XyzVnsUZtv
+    //https://discord.gg/h-m
 
 

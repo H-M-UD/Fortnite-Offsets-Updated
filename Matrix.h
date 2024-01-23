@@ -1,3 +1,4 @@
+//https://discord.gg/XyzVnsUZtv
 D3DXMATRIX Matrix(Vector3 rot, Vector3 origin = Vector3(0, 0, 0))
 {
     float radPitch = (rot.x * float(M_PI) / 180.f);
@@ -10,7 +11,6 @@ D3DXMATRIX Matrix(Vector3 rot, Vector3 origin = Vector3(0, 0, 0))
     float CY = cosf(radYaw);
     float SR = sinf(radRoll);
     float CR = cosf(radRoll);
-  // payson1337
     D3DMATRIX matrix;
     matrix.m[0][0] = CP * CY;
     matrix.m[0][1] = CP * SY;
@@ -34,6 +34,7 @@ D3DXMATRIX Matrix(Vector3 rot, Vector3 origin = Vector3(0, 0, 0))
 
     return matrix;
 }
+//https://discord.gg/XyzVnsUZtv
 
 //join my server to support me <3
 //https://discord.gg/p824eVknXX

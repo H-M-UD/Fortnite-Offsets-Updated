@@ -1,76 +1,74 @@
 //https://discord.gg/h-m
-"UWorld": "0x1133C4C8", //updated
-    "FNamePool": "0x1150A280", //updated
-    "tier": "0x73",
-    "DisplayName": "0x90",
-    "PrimaryPickupItemEntry": "0x350",
-    "ItemDefinition": "0x18",
-    "ObjectID": "0x18",
-    "OwningGameInstance": "0x1d0",
-    "Levels": "0x170",
-    "GameState": "0x158",
-    "PersistentLevel": "0x30",
-    "AActors": "0xA0",
-    "ActorCount": "0xA8",
-    "LocalPlayers": "0x38",
-    "PlayerController": "0x30",
-    "AcknowledgedPawn": "0x338",
-    "PlayerCameraManager": "0x348",
-    "bHidden": "0x58",
-    "RootComponent": "0x198",
-    "RelativeLocation": "0x120",
-    "RelativeRotation": "0x138",
-    "Mesh": "0x318",
-    "PlayerState": "0x2b0",
-    "TeamIndex": "0x10f1", //updated
-    "ReviveFromDBNOTime": "0x4ae8",
-    "LocalActorPos": "0x120",
-    "ComponentToWorld": "0x230",
-    "CurrentWeapon": "0xa20",
-    "CurrentVehicle": "0x2840",
-    "bIsReloadingWeapon": "0x368", //updated
-    "GlobalAnimRateScale": "0xa68",
-    "WeaponData": "0x4d0", //updated
-    "BoneArray": "0x608",
-    "BoneCache": "0x658",
-    "Velocity": "0x168",
-    "TriggerType": "0xb4c",
-    "ReticleDefaultColor": "0x6f8",
-    "ReticleEnemyColor": "0x6fc",
-    "ReticleBuildingColor": "0x700",
-    "ReticleNoTargetColor": "0x704",
-    "InputYawScale": "0x538",
-    "InputPitchScale": "0x53c",
-    "AmmoCount": "0xe1c", //updated
-    "bIsParachuteOpen": "0x1fa4",
-    "bIsSkydiving": "0x1fa3",
-    "bIsDBNO": "0x93a",
-    "bIsDying": "0x758",
-    "bAlreadySearched": "0xd92",
-    "bActive": "0x2c0",
-    "bPickedUp": "0x5f1",
-    "KillScore": "0x10f4",
-    "TeamKillScore": "0x103c",
-    "WorldSettings": "0x2a0",
-    "WorldGravityZ": "0x310",
-    "AimPitchMin": "0x1620",
-    "AimPitchMax": "0x1624",
-    "JumpStaminaCost": "0x2594",
-    "PrimaryFireSound1P": "0x7b8",
-    "PrimaryFireSound": "0x7c0",
-    "PrimaryFireStopSound1P": "0x7d8",
-    "PrimaryFireStopSound": "0x7e0",
-    "VehicleAttributes": "0x1228",
-    "FrontLateralFrictionScale": "0x00",
-    "RearLateralFrictionScale": "0x04",
-    "BrakeForceTractionScale": "0x08",
-    "ForwardForceTractionScale": "0x0c",
-    "SlopeAntigravityScale": "0x10",
-    "TopSpeedScale": "0x14",
-    "VehicleGravityScale": "0x18",
-    "bBrakeBeforeReverse": "0x1c",
-    "CachedFuelComponent": "0x1250",
+"UWorld": "0x1133C4C8", //Up to date
+    "FNamePool": "0x1150A280", //Up to date
+    "tier": "0x73", //Up to date
+    "DisplayName": "0x90", //Up to date
+    "PrimaryPickupItemEntry": "0x350", //Up to date
+    "ItemDefinition": "0x18", //Up to date
+    "ObjectID": "0x18", //Up to date
+    "OwningGameInstance": "0x1d0", //Up to date
+    "Levels": "0x170", //Up to date 
+    "GameState": "0x158", //Up to date
+    "PersistentLevel": "0x30", //Up to date
+    "AActors": "0xA0", //Up to date
+    "ActorCount": "0xA8", //Up to date
+    "LocalPlayers": "0x38", //Up to date
+    "PlayerController": "0x30", //Up to date
+    "AcknowledgedPawn": "0x338", //Up to date
+    "PlayerCameraManager": "0x348", //Up to date
+    "bHidden": "0x58", //Up to date
+    "RootComponent": "0x198", //Up to date
+    "RelativeLocation": "0x120", //Up to date
+    "RelativeRotation": "0x138", //Up to date
+    "Mesh": "0x318", //Up to date
+    "PlayerState": "0x2b0", //Up to date
+    "TeamIndex": "0x10f1", //Up to date
+    "ReviveFromDBNOTime": "0x4ae8", //Up to date
+    "LocalActorPos": "0x120", //Up to date
+    "ComponentToWorld": "0x230", //Up to date
+    "CurrentWeapon": "0xa20", //Up to date
+    "CurrentVehicle": "0x2840", //Up to date
+    "bIsReloadingWeapon": "0x368", //Up to date
+    "GlobalAnimRateScale": "0xa68", //Up to date
+    "WeaponData": "0x4d0", //Up to date
+    "BoneArray": "0x608", //Up to date
+    "BoneCache": "0x658", //Up to date
+    "Velocity": "0x168", //Up to date
+    "TriggerType": "0xb4c", //Up to date
+    "ReticleDefaultColor": "0x6f8", //Up to date
+    "ReticleEnemyColor": "0x6fc", //Up to date
+    "ReticleBuildingColor": "0x700", //Up to date
+    "ReticleNoTargetColor": "0x704", //Up to date
+    "InputYawScale": "0x538", //Up to date
+    "InputPitchScale": "0x53c", //Up to date
+    "AmmoCount": "0xe1c", //Up to date
+    "bIsParachuteOpen": "0x1fa4", //Up to date
+    "bIsSkydiving": "0x1fa3", //Up to date
+    "bIsDBNO": "0x93a", //Up to date
+    "bIsDying": "0x758", //Up to date
+    "bAlreadySearched": "0xd92", //Up to date
+    "bActive": "0x2c0", //Up to date
+    "bPickedUp": "0x5f1", //Up to date
+    "KillScore": "0x10f4", //Up to date
+    "TeamKillScore": "0x103c", //Up to date
+    "WorldSettings": "0x2a0", //Up to date
+    "WorldGravityZ": "0x310", //Up to date
+    "AimPitchMin": "0x1620", //Up to date
+    "AimPitchMax": "0x1624", //Up to date
+    "JumpStaminaCost": "0x2594", //Up to date
+    "PrimaryFireSound1P": "0x7b8", //Up to date
+    "PrimaryFireSound": "0x7c0", //Up to date
+    "PrimaryFireStopSound1P": "0x7d8", //Up to date
+    "PrimaryFireStopSound": "0x7e0", //Up to date
+    "VehicleAttributes": "0x1228", //Up to date
+    "FrontLateralFrictionScale": "0x00", //Up to date
+    "RearLateralFrictionScale": "0x04", //Up to date
+    "BrakeForceTractionScale": "0x08", //Up to date
+    "ForwardForceTractionScale": "0x0c", //Up to date
+    "SlopeAntigravityScale": "0x10", //Up to date
+    "TopSpeedScale": "0x14", //Up to date
+    "VehicleGravityScale": "0x18", //Up to date
+    "bBrakeBeforeReverse": "0x1c", //Up to date
+    "CachedFuelComponent": "0x1250", //Up to date
     "ServerFuel": "0xf0"
     //https://discord.gg/h-m
-
-

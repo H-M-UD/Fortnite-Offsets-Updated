@@ -1,5 +1,5 @@
 //https://discord.gg/h-m
-"UWorld": "0x1133C4C8", //Up to date
+"UWorld": "0x1133C4C8  or  0x112F14C8", //Not Sure
     "FNamePool": "0x1150A280", //Up to date
     "tier": "0x73", //Up to date
     "DisplayName": "0x90", //Up to date

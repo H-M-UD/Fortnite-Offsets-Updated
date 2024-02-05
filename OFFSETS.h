@@ -8,7 +8,7 @@
     "ObjectID": "0x18", //Up to date
     "OwningGameInstance": "0x1d0", //Up to date
     "Levels": "0x170", //Up to date 
-    "GameState": "0x158", //Up to date
+    "GameState": "0x158", //Up to date 
     "PersistentLevel": "0x30", //Up to date
     "AActors": "0xA0", //Up to date
     "ActorCount": "0xA8", //Up to date

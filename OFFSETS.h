@@ -1,8 +1,7 @@
  //https://discord.gg/h-m
-"UWorld": "0x1161FE98", //Up to date
-    "FNAME" : "0x117B7E88", //Up to date
-    "STATICFINDOBJECT" : "0x12DD5C0", //Up to date
-    "GOBJECT" : "0x11749AC0", //Up to date
+"UWorld": "0x117B7E88", //Up to date
+    "GNAME" : "0x1198BD00", //Up to date
+    "GOBJECT" : "0x11790BC0", //Up to date
     "BONEMATRIX" : "0x142900C", //Up to date
     "tier": "0x73", //Up to date
     "DisplayName": "0x90", //Up to date

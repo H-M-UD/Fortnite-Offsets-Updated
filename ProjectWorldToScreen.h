@@ -1,15 +1,21 @@
-Vector3 ProjectWorldToScreen(Vector3 WorldLocation)
+Vector2 worldtscreen(Vector3 WorldLocation)
 {
-    CamewaDescwipsion ViewPoint = get_camera();
-    D3DMATRIX tempMatrix = Matrix(ViewPoint.rotation);
-    Vector3 vAxisX = Vector3(tempMatrix.m[0][0], tempMatrix.m[0][1], tempMatrix.m[0][2]);
-    Vector3 vAxisY = Vector3(tempMatrix.m[1][0], tempMatrix.m[1][1], tempMatrix.m[1][2]);
-    Vector3 vAxisZ = Vector3(tempMatrix.m[2][0], tempMatrix.m[2][1], tempMatrix.m[2][2]);
-    Vector3 vDelta = WorldLocation - ViewPoint.location;
-    Vector3 vTransformed = Vector3(vDelta.Dot(vAxisY), vDelta.Dot(vAxisZ), vDelta.Dot(vAxisX));
-    if (vTransformed.z < 1.f) // payson1337
-        vTransformed.z = 1.f;
-    return Vector3((Width / 2.0f) + vTransformed.x * (((Width / 2.0f) / tanf(ViewPoint.fov * (float)M_PI / 360.f))) / vTransformed.z, (Height / 2.0f) - vTransformed.y * (((Width / 2.0f) / tanf(ViewPoint.fov * (float)M_PI / 360.f))) / vTransformed.z, 0);
+	
+	cdecrypt ViewPoint = viewpoint();
+	D3DMATRIX MatrixT = matrix(ViewPoint.rotation);
+	Vector3 AxisX = Vector3(MatrixT.m[0][0], MatrixT.m[0][1], MatrixT.m[0][2]);
+	Vector3 AxisY = Vector3(MatrixT.m[1][0], MatrixT.m[1][1], MatrixT.m[1][2]);
+	Vector3 AxisZ = Vector3(MatrixT.m[2][0], MatrixT.m[2][1], MatrixT.m[2][2]);
+	Vector3 Delta = WorldLocation - ViewPoint.location;
+	Vector3 Transformed = Vector3(Delta.Dot(AxisY), Delta.Dot(AxisZ), Delta.Dot(AxisX));
+	if (Transformed.z < 1.f)
+	{
+		Transformed.z = 1.f;
+	}
+	//return Vector2((globals->width / 2.0f) + Transformed.x * (((globals->width / 2.0f) / tanf(ViewPoint.fov * (float)M_PI / 360.f))) / Transformed.z, (globals->height / 2.0f) - Transformed.y * (((globals->width / 2.0f) / tanf(ViewPoint.fov * (float)M_PI / 360.f))) / Transformed.z, 0);
+	return Vector2((globals->width / 2.0f) + Transformed.x * (((globals->width / 2.0f) / tanf(ViewPoint.fov * (float)M_PI / 360.f))) / Transformed.z, (globals->height / 2.0f) - Transformed.y * (((globals->width / 2.0f) / tanf(ViewPoint.fov * (float)M_PI / 360.f))) / Transformed.z);
+
 }
 //join my server to support me <3
 //https://discord.gg/h-m
+//https://discord.gg/hm-services

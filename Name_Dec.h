@@ -1,25 +1,25 @@
- char* v25 = buff; // rdi
-        int v26 = nameLength; // ebx
-        int v27;
-        unsigned int v28;
-        char* v29;
-        char v30;
-        
-        v27 = 0;
-        v28 = Read<unsigned int>(Driver.BaseAddress + 0xE851E58) >> 5;
- 
-        if (v26)
-        {
-            v29 = v25;
-            do
-            {
-                v30 = v28 ^ (16 * *v29) ^ (v28 ^ ((unsigned int)*v29 >> 4)) & 0xF;
-                v28 += 4 * v27;
-                *v29 = v30;
-                ++v27;
-                ++v29;
-            } while (v27 < v26);
-        }
+char v21; // al
+int v22; // r8d
+int i; // ecx
+int v25; // eax
+_WORD* v23;
+
+     	v21 = v6 - 1;
+     	if (!(_DWORD)v6)
+     		v21 = 0;
+     	v22 = 0;
+     	v23 = (_WORD*)NameBuffer;
+     	for (i = (v21) & 3; ; *v23++ += i & 7)
+{
+     		v25 = v6 - 1;
+     		if (!(_DWORD)v6)
+     			v25 = 0;
+     		if (v22 >= v25)
+		     	break;
+      		i += 3;
+      	++v22;
+}
 
 //join my server to support me <3
 //https://discord.gg/h-m
+//https://discord.gg/hm-services

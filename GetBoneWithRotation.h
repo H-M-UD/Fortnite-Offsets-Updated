@@ -1,17 +1,15 @@
 //https://discord.gg/h-m
-uintptr_t GetBoneArrayAddress(uintptr_t mesh) {
-    uintptr_t bone_array = d::read<uintptr_t>(mesh + 0x608);
-    if (bone_array == NULL)
-        bone_array = d::read<uintptr_t>( mesh + 0x608 + 0x10);
-    return bone_array;
-}
-
-Vector3 GetBoneWithRotation(uintptr_t mesh, int bone_id) {
-    uintptr_t bone_array = GetBoneArrayAddress((u)this);
-    FTransform bone = d::read <FTransform>(bone_array + (bone_id * 0x60));
-    FTransform component_to_world = d::read<FTransform>((u)this + 0x230);
-    D3DMATRIX matrix = MatrixMultiplication(bone.ToMatrixWithScale(), component_to_world.ToMatrixWithScale());
-    return Vector3(matrix._41, matrix._42, matrix._43);
+Vector3 bonewithrotation(uintptr_t MESH, int ID)
+{	
+	uintptr_t BoneA = request->read<uintptr_t>(MESH + 0x5B0);
+	if (BoneA == NULL)
+	{
+		BoneA = request->read<uintptr_t>(MESH + 0x5B0 + 0x10);
+	}
+	FTransform Bone = request->read<FTransform>(BoneA + (ID * 0x60));
+	FTransform Comp = request->read<FTransform>(MESH + 0x1c0);
+	D3DMATRIX matrix = matrixm(Bone.ToMatrixWithScale(), Comp.ToMatrixWithScale());
+	return Vector3(matrix._41, matrix._42, matrix._43);
 }
 
 //join my server to support me <3

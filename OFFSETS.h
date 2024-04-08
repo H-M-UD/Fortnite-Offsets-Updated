@@ -1,63 +1,155 @@
-
-// https://discord.gg/h-m
-namespace SDK {
- 
-    int UWorlds = 0x10C628D8;
-    int Fname = 0x12144040;
-    int Gameinstance = 0x1d8; // Class Engine.World -> struct UGameInstance
- 
-    int LocalPlayers = 0x38; // Class Engine.GameInstance -> struct TArray<struct ULocalPlayer*> LocalPlayers; 
-    int PlayerController = 0x30; // Class Engine.Player - > struct APlayerController
- 
-    int LocalPawn = 0x338; // Class Engine.PlayerController - > struct APawn* AcknowledgedPawn 
- 
-    int PlayerState = 0x2b0; // Class Engine.Pawn - > struct APlayerState* PlayerState;
-    int RootComponet = 0x198;  //Class Engine.Actor -> struct USceneComponent* RootComponent;
-    int GameState = 0x160; // Class Engine.World -> struct AGameStateBase* GameState;
-    int PersistentLevel = 0x30; // Class Engine.World -> struct ULevel* PersistentLevel;
-    
-    int Velocity = 0x168; // Class Engine.SceneComponent -> struct FVector ComponentVelocity;  
-    int GunName = 0x98;
-    int IsDBNO = 0x93a; //    FortniteGameClass.AFortPawn -> char bIsDBNO : 1 
-    int IsDying = 0x758; //    FortniteGameClass.AFortPawn -> char bIsDying : 1 
- 
-    int Cameramanager = 0x348; // Class Engine.PlayerController -> struct APlayerCameraManager* PlayerCameraManager; 
-    int Mesh = 0x318; // Class Engine.Character struct USkeletalMeshComponent* Mesh x318(0x08) 
-    int Revivefromdbnotime = 0x4c78; // FortniteGameClass.AFortPlayerPawnAthena - > float ReviveFromDBNOTime; 
-    int TeamId = 0x1251;  // FortniteGameClass.AFortPlayerStateAthena - > char TeamIndex;  
-    int pawn_private = 0x308; // Class Engine.PlayerState -> struct APawn* PawnPrivate;  
-    int bIsABot = 0x29a; // Class Engine.PlayerState -> char bIsABot : 1;  
-    int RelativeLocation = 0x120; // Class Engine.SceneComponent -> struct FVector RelativeLocation;  
-    int PlayerArray = 0x2a8; // Class Engine.GameStateBase -> struct TArray<struct APlayerState*> PlayerArray;  
-    int DefaultFOV = 0x2a4; //Engine_classes.APlayerCameraManager - > DefaultFOV 
-    int AActor = 0xA0;
-    int ActorCount = 0xA8;
-    int ComponetToWorld = 0x1c0;
-    int BoneArray = 0x598;
-    int LAST_SUMBIT_TIME = 0x2E8;
-    int LAST_SUMBIT_TIME_ON_SCREEN = 0x2F0;
-    int Levels = 0x170;
- 
-    namespace FortWeapon {
- 
-        int CurrentWeapons = 0xa20;// Class FortniteGame.FortPawn struct AFortWeapon* CurrentWeapon
-        int WeaponData = 0x4f0; // Class FortniteGame.FortWeapon struct UFortWeaponItemDefinition* WeaponData
-        int ItemName = 0x38; // Class ItemizationCoreRuntime.ItemDefinitionBase -> //struct FText ItemName;
-        int Tier = 0x13b; // Class FortniteGame.FortItemDefinition - > enum class EFortItemTier Tier
-        int bIsReloadingWeapon = 0x388; // Class FortniteGame.AFortWeapon -> bool bIsReloadingWeapon;
-        int AmmoCount = 0xe54; // Class FortniteGame.AActor -> int32_t AmmoCount;
-        int bIsTargeting = 0x581; // Class FortniteGame.CustomCharacterPartAnimInstance -> char bIsTargeting : 1;
- 
- 
-    }
-    namespace Character {
-        int bIsCrouched = 0x45c; // Class Engine.Character -> char bIsCrouched : 1;
-    }
-    namespace FortPawn {
- 
-        int bIsJumping = 0xa18; //Class FortniteGame.AFortPawn - > char bIsJumping : 1; 
-        int bIsSliding = 0x75b; //Class FortniteGame.AFortPawn - > char bIsSliding : 1;
-        int TargetedFortPawn = 0x1890;  //Class FortniteGame.AFortPlayerController - > TargetedFortPawn
-    }
+//https://discord.gg/h-m
+//https://discord.gg/hm-services
+namespace FortniteOffsets
+{
+    uintptr_t UWorld = 0x11F26508;
+    uintptr_t GObjects = 0x11EFE8D0;
+    uintptr_t GNames = 0x12107500;
+    uintptr_t AActors = 0xA0;
+    uintptr_t Mesh = 0x318; // ACharacter::Mesh
+    uintptr_t RootComponent = 0x198; // AActor::RootComponent
+    uintptr_t CustomTimeDilation = 0x68; // AActor::CustomTimeDilation
+    uintptr_t PlayerController = 0x30; // UPlayer::PlayerController
+    uintptr_t LocalPlayers = 0x38; // UGameInstance::LocalPlayers
+    uintptr_t OwningGameInstance = 0x1D8; // UWorld::OwningGameInstance
+    uintptr_t GameState = 0x160; // UWorld::GameState
+    uintptr_t PersistentLevel = 0x30; // UWorld::PersistentLevel
+    uintptr_t Levels = 0x178; // UWorld::Levels
+    uintptr_t TinyFont = 0x30; // UEngine::TinyFont
+    uintptr_t SmallFont = 0x50; // UEngine::SmallFont
+    uintptr_t LargeFont = 0x90; // UEngine::LargeFont
+    uintptr_t PawnPrivate = 0x308; // APlayerState::PawnPrivate
+    uintptr_t CompressedPing = 0x298; // APlayerState::CompressedPing
+    uintptr_t PlayerId = 0x294; // APlayerState::PlayerId
+    uintptr_t bIsABot = 0x29A; // APlayerState::bIsABot ( BitField Index -> 3 )
+    uintptr_t PlayerState = 0x2B0; // APawn::PlayerState
+    uintptr_t ReviveFromDBNOTime = 0x4CA8; // AFortPlayerPawnAthena::ReviveFromDBNOTime
+    uintptr_t bCanBeMarkedAsTeammate = 0x5BC0; // AFortPlayerPawnAthena::bCanBeMarkedAsTeammate
+    uintptr_t CurrentVehicle = 0x29B0; // AFortPlayerPawn::CurrentVehicle
+    uintptr_t bIsSkydiving = 0x206B; // AFortPlayerPawn::bIsSkydiving
+    uintptr_t bIsParachuteOpen = 0x206C; // AFortPlayerPawn::bIsParachuteOpen
+    uintptr_t FOVAngle = 0x2B0; // ACameraActor::FOVAngle
+    uintptr_t AspectRatio = 0x2AC; // ACameraActor::AspectRatio
+    uintptr_t CameraComponent = 0x298; // ACameraActor::CameraComponent
+    uintptr_t VehicleAttributes = 0x1240; // AFortAthenaVehicle::VehicleAttributes
+    uintptr_t CachedFuelComponent = 0x1268; // AFortAthenaVehicle::CachedFuelComponent
+    uintptr_t TopSpeedCurrentMultiplier = 0xAA0; // AFortAthenaVehicle::TopSpeedCurrentMultiplier
+    uintptr_t PushForceCurrentMultiplier = 0xAA4; // AFortAthenaVehicle::PushForceCurrentMultiplier
+    uintptr_t WaterEffectsVehicleMaxSpeedKmh = 0x934; // AFortAthenaVehicle::WaterEffectsVehicleMaxSpeedKmh
+    uintptr_t CachedSpeed = 0xE40; // AFortAthenaVehicle::CachedSpeed
+    uintptr_t ServerFuel = 0xF0; // UFortVehicleFuelComponent::ServerFuel
+    uintptr_t ForwardForceTractionScale = 0x201C; // AFortAthenaSKPushVehicle::ForwardForceTractionScale
+    uintptr_t FrontLateralFrictionScale = 0x0; // FReplicatedAthenaVehicleAttributes::FrontLateralFrictionScale
+    uintptr_t RearLateralFrictionScale = 0x4; // FReplicatedAthenaVehicleAttributes::RearLateralFrictionScale
+    uintptr_t BrakeForceTractionScale = 0x8; // FReplicatedAthenaVehicleAttributes::BrakeForceTractionScale
+    uintptr_t ForwardForceTractionScale = 0xC; // FReplicatedAthenaVehicleAttributes::ForwardForceTractionScale
+    uintptr_t SlopeAntigravityScale = 0x10; // FReplicatedAthenaVehicleAttributes::SlopeAntigravityScale
+    uintptr_t TopSpeedScale = 0x14; // FReplicatedAthenaVehicleAttributes::TopSpeedScale
+    uintptr_t VehicleGravityScale = 0x18; // FReplicatedAthenaVehicleAttributes::VehicleGravityScale
+    uintptr_t bBrakeBeforeReverse = 0x1C; // FReplicatedAthenaVehicleAttributes::bBrakeBeforeReverse
+    uintptr_t PlayerArray = 0x2A8; // AGameStateBase::PlayerArray
+    uintptr_t PrimaryPickupItemEntry = 0x350; // AFortPickup::PrimaryPickupItemEntry
+    uintptr_t ItemDefinition = 0x18; // FFortItemEntry::ItemDefinition
+    uintptr_t Rarity = 0x13C; // UFortItemDefinition::Rarity
+    uintptr_t ItemName = 0x40; // UItemDefinitionBase::ItemName
+    uintptr_t AcknowledgedPawn = 0x338; // APlayerController::AcknowledgedPawn
+    uintptr_t PlayerCameraManager = 0x348; // APlayerController::PlayerCameraManager
+    uintptr_t InputPitchScale = 0x53C; // APlayerController::InputPitchScale
+    uintptr_t InputYawScale = 0x538; // APlayerController::InputYawScale
+    uintptr_t InputRollScale = 0x540; // APlayerController::InputRollScale
+    uintptr_t DefaultFOV = 0x2A4; // APlayerCameraManager::DefaultFOV
+    uintptr_t ViewPitchMin = 0x2444; // APlayerCameraManager::ViewPitchMin
+    uintptr_t ViewPitchMax = 0x2448; // APlayerCameraManager::ViewPitchMax
+    uintptr_t ViewYawMin = 0x244C; // APlayerCameraManager::ViewYawMin
+    uintptr_t ViewYawMax = 0x2450; // APlayerCameraManager::ViewYawMax
+    uintptr_t ViewRollMin = 0x2454; // APlayerCameraManager::ViewRollMin
+    uintptr_t ViewRollMax = 0x2458; // APlayerCameraManager::ViewRollMax
+    uintptr_t ViewTarget = 0x320; // APlayerCameraManager::ViewTarget
+    uintptr_t bActive = 0x2C0; // ABuildingWeakSpot::bActive ( BitField Index -> 2 )
+    uintptr_t HitCount = 0x2C4; // ABuildingWeakSpot::HitCount
+    uintptr_t bAlreadySearched = 0xD92; // ABuildingContainer::bAlreadySearched ( BitField Index -> 2 )
+    uintptr_t ViewportClient = 0x78; // ULocalPlayer::ViewportClient
+    uintptr_t CurrentWeapon = 0xA68; // AFortPawn::CurrentWeapon
+    uintptr_t PreviousWeapon = 0xA70; // AFortPawn::PreviousWeapon
+    uintptr_t CurrentWeaponList = 0xA78; // AFortPawn::CurrentWeaponList
+    uintptr_t bIsDying = 0x758; // AFortPawn::bIsDying ( BitField Index -> 4 )
+    uintptr_t bIsDBNO = 0x982; // AFortPawn::bIsDBNO ( BitField Index -> 4 )
+    uintptr_t WeaponData = 0x4F0; // AFortWeapon::WeaponData
+    uintptr_t CurrentReticleColor = 0xD58; // AFortWeapon::CurrentReticleColor
+    uintptr_t AmmoCount = 0xE54; // AFortWeapon::AmmoCount
+    uintptr_t ChargeTime = 0xE68; // AFortWeapon::ChargeTime
+    uintptr_t AccumulatedChargeTime = 0xE6C; // AFortWeapon::AccumulatedChargeTime
+    uintptr_t LastChargeTime = 0xE70; // AFortWeapon::LastChargeTime
+    uintptr_t bIsReloadingWeapon = 0x388; // AFortWeapon::bIsReloadingWeapon
+    uintptr_t bIsChargingWeapon = 0x389; // AFortWeapon::bIsChargingWeapon
+    uintptr_t bIsEquippingWeapon = 0x370; // AFortWeapon::bIsEquippingWeapon
+    uintptr_t AimPitchMin = 0x17A8; // AFortWeaponRanged::AimPitchMin
+    uintptr_t AimPitchMax = 0x17AC; // AFortWeaponRanged::AimPitchMax
+    uintptr_t Spread = 0x150; // FFortRangedWeaponStats::Spread
+    uintptr_t OverrideBaseSpread = 0x154; // FFortRangedWeaponStats::OverrideBaseSpread
+    uintptr_t SpreadDownsights = 0x158; // FFortRangedWeaponStats::SpreadDownsights
+    uintptr_t OverrideSpreadDownsights = 0x15C; // FFortRangedWeaponStats::OverrideSpreadDownsights
+    uintptr_t StandingStillSpreadMultiplier = 0x160; // FFortRangedWeaponStats::StandingStillSpreadMultiplier
+    uintptr_t AthenaCrouchingSpreadMultiplier = 0x164; // FFortRangedWeaponStats::AthenaCrouchingSpreadMultiplier
+    uintptr_t AthenaSlidingSpreadMultiplier = 0x168; // FFortRangedWeaponStats::AthenaSlidingSpreadMultiplier
+    uintptr_t AthenaJumpingFallingSpreadMultiplier = 0x16C; // FFortRangedWeaponStats::AthenaJumpingFallingSpreadMultiplier
+    uintptr_t AthenaSprintingSpreadMultiplier = 0x170; // FFortRangedWeaponStats::AthenaSprintingSpreadMultiplier
+    uintptr_t MinSpeedForSpreadMultiplier = 0x174; // FFortRangedWeaponStats::MinSpeedForSpreadMultiplier
+    uintptr_t MaxSpeedForSpreadMultiplier = 0x178; // FFortRangedWeaponStats::MaxSpeedForSpreadMultiplier
+    uintptr_t SpreadDownsightsAdditionalCooldownTime = 0x17C; // FFortRangedWeaponStats::SpreadDownsightsAdditionalCooldownTime
+    uintptr_t SpreadExponent = 0x180; // FFortRangedWeaponStats::SpreadExponent
+    uintptr_t RecoilVert = 0x1F8; // FFortRangedWeaponStats::RecoilVert
+    uintptr_t RecoilHoriz = 0x208; // FFortRangedWeaponStats::RecoilHoriz
+    uintptr_t FiringRate = 0x1D0; // FFortRangedWeaponStats::FiringRate
+    uintptr_t ReloadTime = 0xE8; // FFortBaseWeaponStats::ReloadTime
+    uintptr_t ArmTime = 0x150; // FFortTrapStats::ArmTime
+    uintptr_t FireDelay = 0x154; // FFortTrapStats::FireDelay
+    uintptr_t DamageDelay = 0x158; // FFortTrapStats::DamageDelay
+    uintptr_t bIsCreativeModeratorModeEnabled = 0x32FA; // AFortPlayerControllerGameplay::bIsCreativeModeratorModeEnabled ( BitField Index -> 5 )
+    uintptr_t bAutoRunOn = 0x10BD; // AFortPlayerController::bAutoRunOn ( BitField Index -> 3 )
+    uintptr_t OnSetFirstPersonCamera = 0x10E8; // AFortPlayerController::OnSetFirstPersonCamera
+    uintptr_t bAllowTargeting = 0xDB4; // AFortWeapon::bAllowTargeting ( BitField Index -> 3 )
+    uintptr_t TimeToEquip = 0x360; // AFortWeapon::TimeToEquip
+    uintptr_t TriggerType = 0x504; // UFortWeaponItemDefinition::TriggerType
+    uintptr_t HitNotifyDuration = 0x50C; // UFortWeaponItemDefinition::HitNotifyDuration
+    uintptr_t bAllowTargetingDuringReload = 0x507; // UFortWeaponItemDefinition::bAllowTargetingDuringReload ( BitField Index -> 6 )
+    uintptr_t bIgnoreTryToFireSlotCooldownRestriction = 0x13E1; // AFortWeapon::bIgnoreTryToFireSlotCooldownRestriction
+    uintptr_t Wireframe = 0x1B8; // UMaterial::Wireframe ( BitField Index -> 6 )
+    uintptr_t BlendMode = 0x129; // UMaterial::BlendMode
+    uintptr_t ScalarParameterValues = 0x160; // UMaterialInstance::ScalarParameterValues
+    uintptr_t VectorParameterValues = 0x170; // UMaterialInstance::VectorParameterValues
+    uintptr_t WorldGravityZ = 0x310; // AWorldSettings::WorldGravityZ
+    uintptr_t HUDScale = 0x4D8; // UFortClientSettingsRecord::HUDScale
+    uintptr_t InitialHUDScale = 0x4E0; // UFortClientSettingsRecord::InitialHUDScale
+    uintptr_t ScopedSlow = 0x564; // UFortClientSettingsRecord::ScopedSlow
+    uintptr_t TargetingSlow = 0x560; // UFortClientSettingsRecord::TargetingSlow
+    uintptr_t MouseSensitivity = 0x58C; // UFortClientSettingsRecord::MouseSensitivity
+    uintptr_t MouseSensitivityX = 0x590; // UFortClientSettingsRecord::MouseSensitivityX
+    uintptr_t MouseSensitivityY = 0x594; // UFortClientSettingsRecord::MouseSensitivityY
+    uintptr_t MusicVolume = 0x918; // UFortClientSettingsRecord::MusicVolume
+    uintptr_t MasterVolume = 0x914; // UFortClientSettingsRecord::MasterVolume
+    uintptr_t FOVMinimum = 0x9B4; // UFortClientSettingsRecord::FOVMinimum
+    uintptr_t FOVMaximum = 0x9B8; // UFortClientSettingsRecord::FOVMaximum
+    uintptr_t bAnonymousMode = 0x93D; // UFortClientSettingsRecord::bAnonymousMode
+    uintptr_t RelativeRotation = 0x138; // USceneComponent::RelativeRotation
+    uintptr_t RelativeLocation = 0x120; // USceneComponent::RelativeLocation
+    uintptr_t ComponentVelocity = 0x168; // USceneComponent::ComponentVelocity
+    uintptr_t RelativeScale3D = 0x150; // USceneComponent::RelativeScale3D
+    uintptr_t PhysicsVolume = 0xA8; // USceneComponent::PhysicsVolume
+    uintptr_t bAbsoluteLocation = 0x180; // USceneComponent::bAbsoluteLocation ( BitField Index -> 2 )
+    uintptr_t bForceWireframe = 0x77E; // USkinnedMeshComponent::bForceWireframe ( BitField Index -> 5 )
+    uintptr_t SkeletalMesh = 0x540; // USkinnedMeshComponent::SkeletalMesh
+    uintptr_t GlobalAnimRateScale = 0xA18; // USkeletalMeshComponent::GlobalAnimRateScale
+    uintptr_t TeamIndex = 0x1251; // AFortPlayerStateAthena::TeamIndex
+    uintptr_t KillScore = 0x1264; // AFortPlayerStateAthena::KillScore
+    uintptr_t TeamKillScore = 0x11AC; // AFortPlayerStateAthena::TeamKillScore
+    uintptr_t bThankedBusDriver = 0x13BD; // AFortPlayerStateAthena::bThankedBusDriver ( BitField Index -> 0 )
+    uintptr_t bIsTalking = 0x1478; // AFortPlayerStateAthena::bIsTalking
+    uintptr_t bIsMuted = 0x1479; // AFortPlayerStateAthena::bIsMuted
+    uintptr_t bIsDisconnected = 0x1754; // AFortPlayerStateAthena::bIsDisconnected
+    uintptr_t RebootCounter = 0x18EC; // AFortPlayerStateAthena::RebootCounter
+    uintptr_t AlwaysIncludeTeamAsAllies = 0x1250; // AFortPlayerStateAthena::AlwaysIncludeTeamAsAllies
+    uintptr_t Platform = 0x438; // AFortPlayerState::Platform
 }
 //https://discord.gg/h-m
+//https://discord.gg/hm-services

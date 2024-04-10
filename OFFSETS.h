@@ -2,7 +2,7 @@
 //https://discord.gg/hm-services
 namespace FortniteOffsets
 {
-    uintptr_t UWorld = 0x11F26508;
+    uintptr_t UWorld = 0x1216B7B8;                                                                        //UPDATED !!
     uintptr_t GObjects = 0x11EFE8D0;
     uintptr_t GNames = 0x12107500;
     uintptr_t AActors = 0xA0;
@@ -73,7 +73,7 @@ namespace FortniteOffsets
     uintptr_t PreviousWeapon = 0xA70; // AFortPawn::PreviousWeapon
     uintptr_t CurrentWeaponList = 0xA78; // AFortPawn::CurrentWeaponList
     uintptr_t bIsDying = 0x758; // AFortPawn::bIsDying ( BitField Index -> 4 )
-    uintptr_t bIsDBNO = 0x982; // AFortPawn::bIsDBNO ( BitField Index -> 4 )
+    uintptr_t bIsDBNO = 0x982; // AFortPawn::bIsDBNO ( BitField Index -> 4 )                                                                        //UPDATED !!
     uintptr_t WeaponData = 0x4F0; // AFortWeapon::WeaponData
     uintptr_t CurrentReticleColor = 0xD58; // AFortWeapon::CurrentReticleColor
     uintptr_t AmmoCount = 0xE54; // AFortWeapon::AmmoCount
@@ -139,8 +139,8 @@ namespace FortniteOffsets
     uintptr_t bAbsoluteLocation = 0x180; // USceneComponent::bAbsoluteLocation ( BitField Index -> 2 )
     uintptr_t bForceWireframe = 0x77E; // USkinnedMeshComponent::bForceWireframe ( BitField Index -> 5 )
     uintptr_t SkeletalMesh = 0x540; // USkinnedMeshComponent::SkeletalMesh
-    uintptr_t GlobalAnimRateScale = 0xA18; // USkeletalMeshComponent::GlobalAnimRateScale
-    uintptr_t TeamIndex = 0x1251; // AFortPlayerStateAthena::TeamIndex
+    uintptr_t GlobalAnimRateScale = 0xA18; // USkeletalMeshComponent::GlobalAnimRateScale                          
+    uintptr_t TeamIndex = 0x1211; // AFortPlayerStateAthena::TeamIndex                                                                        //UPDATED !!
     uintptr_t KillScore = 0x1264; // AFortPlayerStateAthena::KillScore
     uintptr_t TeamKillScore = 0x11AC; // AFortPlayerStateAthena::TeamKillScore
     uintptr_t bThankedBusDriver = 0x13BD; // AFortPlayerStateAthena::bThankedBusDriver ( BitField Index -> 0 )

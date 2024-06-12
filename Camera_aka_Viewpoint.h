@@ -1,5 +1,4 @@
-//https://discord.gg/h-m
-//https://discord.gg/hm-services
+//https://discord.gg/zBpxa4ME5g
 struct cdecrypt
 {
 	Vector3 location;
@@ -39,5 +38,4 @@ cdecrypt viewpoint()
 
 	return camera;
 }
-//https://discord.gg/h-m
-//https://discord.gg/hm-services
+//https://discord.gg/zBpxa4ME5g

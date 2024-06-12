@@ -17,5 +17,4 @@ Vector2 worldtscreen(Vector3 WorldLocation)
 
 }
 //join my server to support me <3
-//https://discord.gg/h-m
-//https://discord.gg/hm-services
+//https://discord.gg/zBpxa4ME5g

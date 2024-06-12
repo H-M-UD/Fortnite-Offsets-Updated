@@ -1,4 +1,4 @@
-//https://discord.gg/h-m
+//https://discord.gg/zBpxa4ME5g
 Vector3 bonewithrotation(uintptr_t MESH, int ID)
 {	
 	uintptr_t BoneA = request->read<uintptr_t>(MESH + 0x5B8);
@@ -13,4 +13,4 @@ Vector3 bonewithrotation(uintptr_t MESH, int ID)
 }
 
 //join my server to support me <3
-//https://discord.gg/h-m
+//https://discord.gg/zBpxa4ME5g

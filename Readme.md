@@ -1,6 +1,5 @@
 LATEST PATCH FORTNITE OFFSETS
 JOIN OUR SERVER FOR MORE CRAZY & UD STUFF 😍
+H&M - PASTA IS FINALLY BACK, JOIN IN FOR CRACKS AND NEW STUFF
 
-free stuff : https://discord.gg/h-m
-
-paid only ; https://discord.gg/hm-services
+WE'RE BACK GUYYYSSSS [JOIN FOR EXCTING STUFF](https://discord.gg/zBpxa4ME5g)

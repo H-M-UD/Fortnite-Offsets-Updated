@@ -1,4 +1,4 @@
-//https://discord.gg/h-m
+//https://discord.gg/zBpxa4ME5g
 D3DXMATRIX Matrix(Vector3 rot, Vector3 origin = Vector3(0, 0, 0))
 {
     float radPitch = (rot.x * float(M_PI) / 180.f);
@@ -34,7 +34,6 @@ D3DXMATRIX Matrix(Vector3 rot, Vector3 origin = Vector3(0, 0, 0))
 
     return matrix;
 }
-//https://discord.gg/h-m
+//https://discord.gg/zBpxa4ME5g
 
 //join my server to support me <3
-//https://discord.gg/p824eVknXX

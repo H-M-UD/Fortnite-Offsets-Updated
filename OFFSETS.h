@@ -1,10 +1,13 @@
-//https://discord.gg/h-m
-//https://discord.gg/hm-services
+//https://discord.gg/zBpxa4ME5g
 namespace FortniteOffsets
 {
-    uintptr_t UWorld = 0x1216B7B8;                                                                        //UPDATED !!
-    uintptr_t GObjects = 0x11EFE8D0;
-    uintptr_t GNames = 0x12107500;
+    uintptr_t UWorld = 0x12BA7050;
+    uintptr_t GObjects = 0x12b7ec90;
+    uintptr_t GNames = 0x12c7aeac;
+    uintptr_t FNames = 0x12D6ABC0;
+    uintptr_t PROCESSEVENT_OFFSET = 0x15ac678;
+    uintptr_t PROCESSEVENT_INDEX = 0x4d;
+    uintptr_t APPENDSTRING = 0x12c7aeac;
     uintptr_t AActors = 0xA0;
     uintptr_t Mesh = 0x318; // ACharacter::Mesh
     uintptr_t RootComponent = 0x198; // AActor::RootComponent
@@ -23,9 +26,9 @@ namespace FortniteOffsets
     uintptr_t PlayerId = 0x294; // APlayerState::PlayerId
     uintptr_t bIsABot = 0x29A; // APlayerState::bIsABot ( BitField Index -> 3 )
     uintptr_t PlayerState = 0x2B0; // APawn::PlayerState
-    uintptr_t ReviveFromDBNOTime = 0x4CA8; // AFortPlayerPawnAthena::ReviveFromDBNOTime
-    uintptr_t bCanBeMarkedAsTeammate = 0x5BC0; // AFortPlayerPawnAthena::bCanBeMarkedAsTeammate
-    uintptr_t CurrentVehicle = 0x29B0; // AFortPlayerPawn::CurrentVehicle
+    uintptr_t ReviveFromDBNOTime = 0x4BF8; // AFortPlayerPawnAthena::ReviveFromDBNOTime
+    uintptr_t bCanBeMarkedAsTeammate = 0x5b88; // AFortPlayerPawnAthena::bCanBeMarkedAsTeammate
+    uintptr_t CurrentVehicle = 0x29e8; // AFortPlayerPawn::CurrentVehicle
     uintptr_t bIsSkydiving = 0x206B; // AFortPlayerPawn::bIsSkydiving
     uintptr_t bIsParachuteOpen = 0x206C; // AFortPlayerPawn::bIsParachuteOpen
     uintptr_t FOVAngle = 0x2B0; // ACameraActor::FOVAngle
@@ -50,7 +53,7 @@ namespace FortniteOffsets
     uintptr_t PlayerArray = 0x2A8; // AGameStateBase::PlayerArray
     uintptr_t PrimaryPickupItemEntry = 0x350; // AFortPickup::PrimaryPickupItemEntry
     uintptr_t ItemDefinition = 0x18; // FFortItemEntry::ItemDefinition
-    uintptr_t Rarity = 0x13C; // UFortItemDefinition::Rarity
+    uintptr_t Rarity = 0x9B; // UFortItemDefinition::Rarity
     uintptr_t ItemName = 0x40; // UItemDefinitionBase::ItemName
     uintptr_t AcknowledgedPawn = 0x338; // APlayerController::AcknowledgedPawn
     uintptr_t PlayerCameraManager = 0x348; // APlayerController::PlayerCameraManager
@@ -141,7 +144,7 @@ namespace FortniteOffsets
     uintptr_t SkeletalMesh = 0x540; // USkinnedMeshComponent::SkeletalMesh
     uintptr_t GlobalAnimRateScale = 0xA18; // USkeletalMeshComponent::GlobalAnimRateScale                          
     uintptr_t TeamIndex = 0x1211; // AFortPlayerStateAthena::TeamIndex                                                                        //UPDATED !!
-    uintptr_t KillScore = 0x1264; // AFortPlayerStateAthena::KillScore
+    uintptr_t KillScore = 0x1224; // AFortPlayerStateAthena::KillScore
     uintptr_t TeamKillScore = 0x11AC; // AFortPlayerStateAthena::TeamKillScore
     uintptr_t bThankedBusDriver = 0x13BD; // AFortPlayerStateAthena::bThankedBusDriver ( BitField Index -> 0 )
     uintptr_t bIsTalking = 0x1478; // AFortPlayerStateAthena::bIsTalking

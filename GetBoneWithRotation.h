@@ -1,10 +1,10 @@
 //https://discord.gg/h-m
 Vector3 bonewithrotation(uintptr_t MESH, int ID)
 {	
-	uintptr_t BoneA = request->read<uintptr_t>(MESH + 0x5B0);
+	uintptr_t BoneA = request->read<uintptr_t>(MESH + 0x5B8);
 	if (BoneA == NULL)
 	{
-		BoneA = request->read<uintptr_t>(MESH + 0x5B0 + 0x10);
+		BoneA = request->read<uintptr_t>(MESH + 0x5B8 + 0x10);
 	}
 	FTransform Bone = request->read<FTransform>(BoneA + (ID * 0x60));
 	FTransform Comp = request->read<FTransform>(MESH + 0x1c0);

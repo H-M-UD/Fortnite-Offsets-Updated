@@ -1,11 +1,11 @@
-char *v2; // rdi
+char*v2; // rdi
   int v4; // ecx
   unsigned int v5; // eax
   __int64 v6; // rdx
-
-  v2 = buffer;
-  v4 = 9;
-  v5 = Length;
+ 
+  v2 = Buffer;
+  v4 = 17;
+  v5 = Lenght;
   if ( v5 )
   {
     v6 = v5;
@@ -17,4 +17,5 @@ char *v2; // rdi
       --v6;
     }
     while ( v6 );
-//https://discord.gg/h-m
+  }
+//https://discord.gg/zBpxa4ME5g

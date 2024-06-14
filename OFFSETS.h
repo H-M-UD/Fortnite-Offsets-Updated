@@ -1,13 +1,22 @@
 //https://discord.gg/zBpxa4ME5g
 namespace FortniteOffsets
 {
-    uintptr_t UWorld = 0x12BA7050;
+    uintptr_t UWorld = 0x129E1DD8; //UPDATED !
     uintptr_t GObjects = 0x12b7ec90;
-    uintptr_t GNames = 0x12c7aeac;
+    uintptr_t GNames = 0x12BA9140;
     uintptr_t FNames = 0x12D6ABC0;
+    uintptr_t StaticFindObject = 0x1DE185C; //UPDATED !
     uintptr_t PROCESSEVENT_OFFSET = 0x15ac678;
     uintptr_t PROCESSEVENT_INDEX = 0x4d;
     uintptr_t APPENDSTRING = 0x12c7aeac;
+    uintptr_t GetBoneMatrix = 0x1EB8938;
+	uintptr_t LineOfSightTo = 0x627FB84;
+    uintptr_t Viewpoint = 0x10F90A10;
+	uintptr_t DrawTransition = 0x71;
+	uintptr_t Fire = 0x285D0DC;
+	uintptr_t Malloc = 0xC4663D;
+	uintptr_t Free = 0xC4668D;
+
     uintptr_t AActors = 0xA0;
     uintptr_t Mesh = 0x318; // ACharacter::Mesh
     uintptr_t RootComponent = 0x198; // AActor::RootComponent

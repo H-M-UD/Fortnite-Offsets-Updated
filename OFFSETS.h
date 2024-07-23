@@ -51,7 +51,7 @@ namespace FortniteOffsets
         uintptr_t AmmoCount = 0xEEC;
         uintptr_t bIsTargeting = 0x581;
         uintptr_t GunName = 0x98;
-        uintptr_t Tier = 0x9A; // fresh dump
+        uintptr_t Tier = 0x9A; 
         uintptr_t bIsCrouched = 0x45C;
 	uintptr_t bIsDying = 0x758;
 	uintptr_t bIsHiddenForDeath = 0x758;
